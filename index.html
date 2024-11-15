@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>PREMIER TOWING | Luxury Vehicle Recovery Perth</title>
+    <meta name="description" content="Perth's ultra-premium vehicle transport & recovery specialists. 24/7 dedicated concierge service for luxury, exotic & prestige vehicles. Trusted by Western Australia's leading dealerships.">
+    <meta name="keywords" content="luxury car transport perth, exotic car towing, prestige vehicle recovery, supercar transport perth, enclosed car carrier, premium vehicle logistics">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PREMIER TOWING | Luxury Vehicle Recovery">
+    <meta property="og:description" content="Perth's ultra-premium vehicle transport & recovery specialists">
+    <meta property="og:image" content="/api/placeholder/1200/630">
+    
+    <!-- Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Core Variables */
+        :root {
+            /* Brand Colors */
+            --primary: #ff0033;
+            --secondary: #ff69b4;
+            --dark: #0A0A0A;
+            --darker: #050505;
+            --light: #FFFFFF;
+            --gray-100: #F7F7F7;
+            --gray-200: #E5E5E5;
+            --gray-300: #D4D4D4;
+            --gray-400: #A3A3A3;
+            --gray-500: #737373;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-800: #262626;
+            --gray-900: #171717;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+            --gradient-dark: linear-gradient(135deg, var(--dark), var(--gray-800));
+            --gradient-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+            
+            /* Transitions */
+            --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            
+            /* Typography */
+            --font-heading: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-body: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            
+            /* Layout */
+            --container-max: 1400px;
+            --container-padding: 2rem;
+            --header-height: 80px;
+        }
+
+        /* Core Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes clipReveal {
+            from {
+                clip-path: inset(0 100% 0 0);
+            }
+            to {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 0, 51, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 0, 51, 0); }
+        }
+
+        /* Base Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--light);
+            background: var(--dark);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all var(--transition-normal);
+            padding: 1.5rem 0;
+            background: transparent;
+        }
+
+        .nav.scrolled {
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light);
+            text-decoration: none;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-logo::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform var(--transition-normal);
+        }
+
+        .nav-logo:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color var(--transition-normal);
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform var(--transition-normal);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.1);
+            transform: translateX(-100%);
+            transition: transform var(--transition-normal);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-cta:hover::before {
+            transform: translateX(0);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--darker);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 10, 10, 0.7) 0%,
+                rgba(10, 10, 10, 0.8) 50%,
+                rgba(10, 10, 10, 0.95) 100%
+            );
+            z-index: 2;
+        }
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.1);
+            animation: slowZoom 20s infinite alternate;
+        }
+
+        @keyframes slowZoom {
+            from { transform: scale(1.1); }
+            to { transform: scale(1.2); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 0 var(--container-padding);
+            text-align: center;
+            margin-top: -5vh;
+        }
+
+        .hero-pretitle {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin-bottom: 2rem;
+            color: white;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-out 0.2s forwards;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 0.4s forwards;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 0.6s forwards;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 1.2rem 3rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out 0.8s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s var(--transition-smooth);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255,0,51,0.3);
+        }
+
+        .hero-cta:hover::before {
+            transform: translateX(100%);
+        }
+
+        /* Emergency Contact */
+        .emergency-contact {
+            position: fixed;
+            right: 2rem;
+            bottom: 2rem;
+            z-index: 900;
+        }
+
+        .emergency-button {
+            background: var(--gradient-primary);
+            color: var(--light);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: var(--shadow-lg);
+            animation: glowPulse 2s infinite;
+            transition: transform var(--transition-normal);
+        }
+
+        .emergency-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Designs */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-content {
+                padding: 0 1rem;
+            }
+
+            .emergency-contact {
+                right: 1rem;
+                bottom: 1rem;
+            }
+
+            .emergency-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <!-- Add this to your existing CSS (inside your style tags) -->
+<style>
+    /* Premium Loader Styles */
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--darker);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.loader-wrapper.hidden {
+    transform: translateY(-100%);
+}
+
+.loader-content {
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.loader-brand {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--light);
+    margin-bottom: 2rem;
+    letter-spacing: 0.2em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: brandReveal 0.8s ease-out forwards;
+}
+
+.loader-line {
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,0.1);
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease-out;
+}
+
+.loader-percentage {
+    font-size: 1.2rem;
+    color: var(--light);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+
+@keyframes brandReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader-content">
+        <div class="loader-brand">PREMIER TOWING</div>
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+        <div class="loader-percentage">0%</div>
+    </div>
+</div>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">PERTH CHEAP TOWING</a>
+            <div class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="tel:+61417177776" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i>
+                    +61 417 177 776
+                </a>
+            </div>
+        </div>
+    </nav>
+
+     <section class="hero">
+            <div class="hero-background">
+                <img src="https://i.postimg.cc/L8WBwjjk/image-14.webp" alt="Luxury Towing Service">
+            </div>
+            <div class="hero-content">
+                <div class="hero-pretitle">Perth's Premier Vehicle Transport</div>
+                <h1 class="hero-title">Luxury Vehicle Recovery</h1>
+                <p class="hero-subtitle">Exceptional care for exceptional vehicles. Specializing in premium, exotic, and prestige automotive logistics.</p>
+                <a href="#contact" class="hero-cta">
+                    <i class="fas fa-concierge-bell"></i>
+                    EMERGENCY SERVICE
+                </a>
+            </div>
+    </section>
+
+    <div class="emergency-contact">
+        <a href="tel:+61417177776" class="emergency-button">
+            <i class="fas fa-phone-alt"></i>
+            0417 177 776
+        </a>
+    </div>
+
+   <section class="services-premium" id="services" aria-label="Perth Towing Services">
+    <style>
+        .services-premium {
+            --premium-dark: #0A0A0A;
+            --premium-darker: #050505;
+            --premium-light: #FFFFFF;
+            --premium-primary: #ff0033;
+            --premium-secondary: #ff69b4;
+            --premium-gray-300: #D4D4D4;
+            --premium-gray-400: #A3A3A3;
+            --premium-gradient: linear-gradient(135deg, var(--premium-primary), var(--premium-secondary));
+            --card-height: 450px;
+            
+            padding: 8rem 0;
+            background: var(--premium-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        .services-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .services-subtitle {
+            color: var(--premium-gray-300);
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            height: var(--card-height);
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 3rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--premium-gradient);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .service-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .service-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.4s ease;
+        }
+
+        .service-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--premium-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-areas {
+            font-size: 0.9rem;
+            color: var(--premium-gray-400);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--premium-gray-300);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        .service-feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            color: var(--premium-gray-300);
+        }
+
+        .feature-icon {
+            color: var(--premium-primary);
+            font-size: 0.9rem;
+        }
+
+        .service-link {
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--premium-gradient);
+            border-radius: 8px;
+            color: var(--premium-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255,0,51,0.2);
+        }
+
+        @media (max-width: 1400px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-card {
+                --card-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .services-premium {
+                padding: 4rem 0;
+            }
+            .service-card {
+                --card-height: auto;
+                min-height: 400px;
+            }
+        }
+    </style>
+
+    <div class="services-container">
+        <header class="services-header">
+            <h2 class="services-title">Perth's Premier Towing Services</h2>
+            <p class="services-subtitle">24/7 Professional Towing & Recovery Across Perth Metropolitan Area</p>
+        </header>
+
+        <div class="services-grid">
+            <!-- Car Towing -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-car service-icon"></i>
+                    <h3 class="service-title">Car Towing</h3>
+                    <p class="service-areas">Serving: Perth CBD, Joondalup, Wanneroo & All Metro Areas</p>
+                    <p class="service-description">Professional car towing services with rapid response times. Suitable for all vehicle types from compact cars to luxury vehicles.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>24/7 Emergency Response</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Competitive Rates</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>All Perth Suburbs Covered</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Call Now
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Local Haulage -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-truck service-icon"></i>
+                    <h3 class="service-title">Local Haulage</h3>
+                    <p class="service-areas">Perth Metro Area Specialists</p>
+                    <p class="service-description">Reliable local vehicle transport services within Perth metropolitan area. Perfect for dealerships and private transfers.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Same-Day Service</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Metro-Wide Coverage</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Affordable Rates</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Request Quote
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Long Distance -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-route service-icon"></i>
+                    <h3 class="service-title">Long Distance Haulage</h3>
+                    <p class="service-areas">Perth to Regional WA & Interstate</p>
+                    <p class="service-description">Long-distance vehicle transport services across Western Australia and interstate with secure transportation.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Interstate Transport</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Regional WA Coverage</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Tracking Available</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Get Started
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Motorcycle Towing -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-motorcycle service-icon"></i>
+                    <h3 class="service-title">Motorcycle Towing</h3>
+                    <p class="service-areas">Perth & Surrounding Areas</p>
+                    <p class="service-description">Specialized motorcycle transport with secure mounting and weather protection. Expert handling for all bikes.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Secure Mounting</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Weather Protected</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Experienced Handlers</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Call Now
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Special Vehicle Towing -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-truck-pickup service-icon"></i>
+                    <h3 class="service-title">Special Vehicle Towing</h3>
+                    <p class="service-areas">All Perth Metropolitan Areas</p>
+                    <p class="service-description">Specialized equipment and expertise for unique vehicles including 4x4s, classics, and modified vehicles.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Custom Solutions</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Specialized Equipment</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Expert Handling</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Request Service
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tilt Tray Service -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-angle-double-up service-icon"></i>
+                    <h3 class="service-title">Tilt Tray Service</h3>
+                    <p class="service-areas">Perth Wide Coverage</p>
+                    <p class="service-description">Modern tilt tray technology for safe and efficient vehicle loading. Ideal for low clearance and damaged vehicles.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Modern Equipment</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Safe Loading</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>All Vehicle Types</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Call Now
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Accident Recovery -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-ambulance service-icon"></i>
+                    <h3 class="service-title">Accident Recovery</h3>
+                    <p class="service-areas">24/7 Perth Emergency Service</p>
+                    <p class="service-description">Fast response accident recovery service with specialized equipment for damaged vehicle recovery and transport.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>24/7 Response</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Emergency Priority</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Insurance Approved</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Emergency Call
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Breakdown Recovery -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h3 class="service-title">Breakdown Recovery</h3>
+                    <p class="service-areas">All Perth Areas Covered</p>
+                    <p class="service-description">Rapid response<p class="service-description">Rapid response breakdown recovery service with quick dispatch times. Professional handling of all vehicle breakdowns.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Fast Response</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Any Location</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Competitive Rates</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Call Now
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Emergency Roadside Assistance -->
+            <div class="service-card">
+                <div class="service-content">
+                    <i class="fas fa-exclamation-triangle service-icon"></i>
+                    <h3 class="service-title">Roadside Assistance</h3>
+                    <p class="service-areas">Perth Metropolitan Area</p>
+                    <p class="service-description">24/7 emergency roadside assistance including battery jump starts, fuel delivery, and lockout services.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Immediate Help</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Basic Repairs</span>
+                        </li>
+                        <li class="service-feature">
+                            <i class="fas fa-check feature-icon"></i>
+                            <span>Affordable Rates</span>
+                        </li>
+                    </ul>
+                    <a href="tel:0400123456" class="service-link">
+                        Get Help Now
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            // Intersection Observer for scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '50px'
+            });
+
+            // Animate cards on scroll
+            document.querySelectorAll('.service-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.5s ease ${index * 0.1}s`;
+                observer.observe(card);
+            });
+
+            // Add click-to-call tracking
+            document.querySelectorAll('.service-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'Call Button',
+                            'event_label': this.closest('.service-card').querySelector('.service-title').textContent
+                        });
+                    }
+                });
+            });
+
+            // Enhanced hover effects
+            document.querySelectorAll('.service-card').forEach(card => {
+                const icon = card.querySelector('.service-icon');
+                
+                card.addEventListener('mouseenter', () => {
+                    icon.style.transform = 'scale(1.1) translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    icon.style.transform = 'scale(1) translateY(0)';
+                });
+            });
+
+            // Add touch support for mobile
+            if ('ontouchstart' in window) {
+                document.querySelectorAll('.service-card').forEach(card => {
+                    card.addEventListener('touchstart', function() {
+                        this.style.transform = 'translateY(-5px)';
+                    });
+                    
+                    card.addEventListener('touchend', function() {
+                        this.style.transform = 'translateY(0)';
+                    });
+                });
+            }
+
+            // Load optimization
+            document.fonts.ready.then(() => {
+                document.body.classList.add('fonts-loaded');
+            });
+        })();
+    </script>
+</section>
+<section class="experience-premium" id="experience" aria-label="Company Experience and Statistics">
+    <style>
+        .experience-premium {
+            --premium-dark: #0A0A0A;
+            --premium-darker: #050505;
+            --premium-light: #FFFFFF;
+            --premium-primary: #ff0033;
+            --premium-secondary: #ff69b4;
+            --premium-gray-300: #D4D4D4;
+            --premium-gray-400: #A3A3A3;
+            --premium-gray-600: #525252;
+            --premium-gradient: linear-gradient(135deg, var(--premium-primary), var(--premium-secondary));
+            
+            padding: 8rem 0;
+            background: var(--premium-darker);
+            position: relative;
+            overflow: hidden;
+            color: var(--premium-light);
+        }
+
+        .experience-premium::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: linear-gradient(135deg, transparent 0%, rgba(255,0,51,0.03) 50%, transparent 100%);
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
+
+        .experience-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .experience-content {
+            padding-right: 2rem;
+        }
+
+        .experience-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideUp 0.8s ease-out forwards;
+        }
+
+        .experience-description {
+            font-size: 1.1rem;
+            color: var(--premium-gray-300);
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--premium-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            background: var(--premium-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .stat-number.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .stat-label {
+            text-transform: uppercase;
+            color: var(--premium-gray-400);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .achievements-list {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeSlideUp 0.8s ease-out 0.4s forwards;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .achievement-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--premium-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--premium-light);
+            flex-shrink: 0;
+        }
+
+        .achievement-text {
+            color: var(--premium-gray-300);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .experience-image-wrapper {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateX(20px);
+            animation: fadeSlideLeft 0.8s ease-out 0.6s forwards;
+        }
+
+        .experience-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transform: scale(1.05);
+            transition: transform 0.6s ease;
+        }
+
+        .experience-image-wrapper:hover .experience-image {
+            transform: scale(1);
+        }
+
+        .experience-image-wrapper::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--premium-primary);
+            border-radius: 12px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeSlideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .experience-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .experience-content {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .experience-premium {
+                padding: 4rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .experience-container {
+                padding: 0 1rem;
+            }
+
+            .experience-title {
+                font-size: 2rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+
+    <div class="experience-container">
+        <div class="experience-grid">
+            <div class="experience-content">
+                <h2 class="experience-title">Unmatched Expertise</h2>
+                <p class="experience-description">With over a decade of experience in luxury vehicle logistics, we've earned the trust of Perth's most discerning clients and prestigious dealerships.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-card" role="group" aria-label="Years of Experience Statistics">
+                        <div class="stat-number" data-value="15" data-suffix="+">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card" role="group" aria-label="Vehicles Transported Statistics">
+                        <div class="stat-number" data-value="5000" data-suffix="+">0</div>
+                        <div class="stat-label">Vehicles Transported</div>
+                    </div>
+                    <div class="stat-card" role="group" aria-label="Average Response Time Statistics">
+                        <div class="stat-number" data-value="31" data-suffix="min">0</div>
+                        <div class="stat-label">Average Response</div>
+                    </div>
+                    <div class="stat-card" role="group" aria-label="Client Satisfaction Statistics">
+                        <div class="stat-number" data-value="100" data-suffix="%">0</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-text">Certified Luxury Vehicle Transport Specialists</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-text">Official Partner of Premium Dealerships</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-check" aria-hidden="true"></i>
+                        </div>
+                        <div class="achievement-text">Comprehensive Insurance Coverage</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-image-wrapper">
+                <img 
+                    src="https://i.postimg.cc/3N8fG6GP/image-15.webp" 
+                    alt="Premium vehicle transport expertise in action" 
+                    class="experience-image"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                >
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            function animateStats(element, start, end, duration, suffix = '') {
+                if (element.classList.contains('animation-completed')) return;
+                
+                element.classList.add('visible');
+                
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    
+                    // Premium smooth easing function
+                    const easeOutExpo = 1 - Math.pow(2, -10 * progress);
+                    const current = Math.floor(easeOutExpo * (end - start) + start);
+                    
+                    element.textContent = current + suffix;
+                    
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        element.classList.add('animation-completed');
+                    }
+                };
+                
+                window.requestAnimationFrame(step);
+            }
+
+            // Premium intersection observer with enhanced options
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('animation-completed')) {
+                        const value = parseInt(entry.target.dataset.value);
+                        const suffix = entry.target.dataset.suffix || '';
+                        
+                        // Add slight delay between each animation
+                        const index = Array.from(entry.target.parentElement.parentElement.children).indexOf(entry.target.parentElement);
+                        setTimeout(() => {
+                            animateStats(entry.target, 0, value, 2000, suffix);
+                        }, index * 200);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px'
+            });
+
+            // Observe all stat numbers
+            document.querySelectorAll('.stat-number').forEach(stat => {
+                statsObserver.observe(stat);
+            });
+
+            // Handle hover effects
+            document.querySelectorAll('.stat-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        })();
+    </script>
+</section>
+
+  
+<section class="testimonials" id="testimonials">
+        <style>
+            .testimonials {
+                padding: 8rem 0;
+                background: linear-gradient(to bottom, var(--darker), var(--dark));
+                position: relative;
+                overflow: hidden;
+            }
+
+            .testimonials-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 2rem;
+                margin-top: 4rem;
+            }
+
+            .testimonial-card {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                padding: 2.5rem;
+                position: relative;
+                transition: all var(--transition-normal);
+                overflow: hidden;
+            }
+
+            .testimonial-card::before {
+                content: '"';
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 120px;
+                font-family: Georgia, serif;
+                color: var(--primary);
+                opacity: 0.1;
+                line-height: 1;
+            }
+
+            .testimonial-card:hover {
+                transform: translateY(-10px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+
+            .testimonial-content {
+                position: relative;
+                z-index: 1;
+            }
+
+            .testimonial-text {
+                font-size: 1.1rem;
+                line-height: 1.7;
+                color: var(--gray-300);
+                margin-bottom: 2rem;
+                font-style: italic;
+            }
+
+            .testimonial-author {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            .author-info {
+                flex: 1;
+            }
+
+            .author-name {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--light);
+                margin-bottom: 0.25rem;
+            }
+
+            .author-title {
+                font-size: 0.9rem;
+                color: var(--gray-400);
+            }
+
+            .testimonial-rating {
+                display: flex;
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+            }
+
+            .rating-star {
+                color: var(--primary);
+                font-size: 0.9rem;
+            }
+
+            .client-logos {
+                margin-top: 6rem;
+                border-top: 1px solid rgba(255,255,255,0.05);
+                padding-top: 4rem;
+            }
+
+            .logo-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 3rem;
+                align-items: center;
+                opacity: 0.6;
+            }
+
+            .client-logo {
+                filter: grayscale(100%) brightness(200%);
+                transition: all var(--transition-normal);
+            }
+
+            .client-logo:hover {
+                filter: grayscale(0%) brightness(100%);
+                transform: scale(1.05);
+            }
+
+            .testimonial-carousel {
+                position: relative;
+                margin-top: 4rem;
+            }
+
+            .carousel-track {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .carousel-nav {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 3rem;
+            }
+
+            .carousel-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid rgba(255,255,255,0.1);
+                background: transparent;
+                color: var(--light);
+                cursor: pointer;
+                transition: all var(--transition-normal);
+            }
+
+            .carousel-button:hover {
+                background: var(--primary);
+                border-color: var(--primary);
+            }
+        </style>
+
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>Trusted by Perth's most discerning vehicle owners</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Their attention to detail when handling my Ferrari was impeccable. The enclosed transport service gave me complete peace of mind. Truly a premium service."
+                        </p>
+                        <div class="testimonial-author">
+                           
+                            <div class="author-info">
+                                <h4 class="author-name">James Robertson</h4>
+                                <p class="author-title">Ferrari Owner, Dalkeith</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "The team's professionalism and expertise with luxury vehicles is outstanding. Their 24/7 concierge service is exactly what high-end vehicle owners need."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Chen</h4>
+                                <p class="author-title">Luxury Car Dealership Manager</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "As a classic car collector, I appreciate their meticulous approach to vehicle transport. The enclosed carrier service is perfect for preserving vintage vehicles."
+                        </p>
+                        <div class="testimonial-author">
+                   
+                            
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Stewart</h4>
+                                <p class="author-title">Classic Car Collector</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                    <i class="fas fa-star rating-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-logos">
+                <div class="logo-grid">
+                    <img src="/api/placeholder/200/100" alt="Luxury Dealership Partner" class="client-logo">
+                    <img src="/api/placeholder/200/100" alt="Premium Insurance Partner" class="client-logo">
+                    <img src="/api/placeholder/200/100" alt="Automotive Club Partner" class="client-logo">
+                    <img src="/api/placeholder/200/100" alt="Vehicle Association Partner" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <style>
+            .process {
+                padding: 8rem 0;
+                background: var(--dark);
+                position: relative;
+            }
+
+            .process::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle at 0% 50%, rgba(255,0,51,0.1) 0%, transparent 50%);
+            }
+
+            .process-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .process-timeline {
+                margin-top: 6rem;
+                position: relative;
+            }
+
+            .process-timeline::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(to bottom, 
+                    var(--primary) 0%, 
+                    var(--secondary) 50%, 
+                    var(--primary) 100%);
+            }
+
+            .timeline-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 4rem;
+            }
+
+            .timeline-item:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .timeline-content {
+                width: 45%;
+                padding: 2rem;
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                position: relative;
+                transition: all var(--transition-normal);
+            }
+
+            .timeline-content:hover {
+                transform: translateY(-5px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+
+            .timeline-dot {
+                width: 20px;
+                height: 20px;
+                background: var(--gradient-primary);
+                border-radius: 50%;
+                position: relative;
+                z-index: 2;
+                box-shadow: 0 0 0 4px rgba(255,0,51,0.2);
+                transition: all var(--transition-normal);
+            }
+
+            .timeline-item:hover .timeline-dot {
+                transform: scale(1.3);
+                box-shadow: 0 0 0 6px rgba(255,0,51,0.3);
+            }
+
+            .timeline-number {
+                font-size: 4rem;
+                font-weight: 700;
+                background: var(--gradient-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.3;
+                position: absolute;
+                top: -2rem;
+                left: -1rem;
+            }
+
+            .timeline-title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                color: var(--light);
+            }
+
+            .timeline-description {
+                color: var(--gray-400);
+                line-height: 1.7;
+            }
+
+            .process-features {
+                margin-top: 6rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+            }
+
+            .process-feature {
+                padding: 2rem;
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                text-align: center;
+                transition: all var(--transition-normal);
+            }
+
+            .process-feature:hover {
+                transform: translateY(-10px);
+                background: rgba(255,255,255,0.03);
+            }
+
+            .feature-icon {
+                font-size: 2.5rem;
+                color: var(--primary);
+                margin-bottom: 1.5rem;
+                transition: all var(--transition-normal);
+            }
+
+            .process-feature:hover .feature-icon {
+                transform: scale(1.2);
+                color: var(--secondary);
+            }
+
+            .feature-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                color: var(--light);
+            }
+
+            .feature-description {
+                color: var(--gray-400);
+                font-size: 0.9rem;
+                line-height: 1.7;
+            }
+
+            @media (max-width: 768px) {
+                .process-timeline::before {
+                    left: 0;
+                }
+
+                .timeline-item {
+                    flex-direction: column;
+                    margin-left: 20px;
+                }
+
+                .timeline-item:nth-child(even) {
+                    flex-direction: column;
+                }
+
+                .timeline-content {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                .timeline-dot {
+                    margin: 2rem 0;
+                }
+
+                .process-features {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <div class="process-container">
+            <div class="section-title">
+                <h2>Our Premium Process</h2>
+                <p>Excellence in every step of your vehicle's journey</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">01</div>
+                        <h3 class="timeline-title">Initial Contact</h3>
+                        <p class="timeline-description">
+                            Connect with our 24/7 concierge team for immediate assistance. We'll gather details about your vehicle and specific requirements to provide a tailored solution.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">02</div>
+                        <h3 class="timeline-title">Vehicle Assessment</h3>
+                        <p class="timeline-description">
+                            Our specialists evaluate your vehicle's specifications and requirements, determining the most appropriate transport method and equipment needed.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">03</div>
+                        <h3 class="timeline-title">Premium Transport</h3>
+                        <p class="timeline-description">
+                            Using state-of-the-art equipment and following strict protocols, we ensure your vehicle is transported with the utmost care and attention to detail.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-number">04</div>
+                        <h3 class="timeline-title">Secure Delivery</h3>
+                        <p class="timeline-description">
+                            Your vehicle is carefully delivered to its destination, with comprehensive documentation and final inspection ensuring complete satisfaction.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+
+            <div class="process-features">
+                <div class="process-feature">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h4 class="feature-title">Full Insurance</h4>
+                    <p class="feature-description">
+                        Comprehensive coverage for complete peace of mind during transport
+                    </p>
+                </div>
+
+                <div class="process-feature">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <h4 class="feature-title">24/7 Support</h4>
+                    <p class="feature-description">
+                        Round-the-clock concierge service and vehicle monitoring
+                    </p>
+                </div>
+
+                <div class="process-feature">
+                    <i class="fas fa-map-marked-alt feature-icon"></i>
+                    <h4 class="feature-title">Live Tracking</h4>
+                    <p class="feature-description">
+                        Real-time updates and location tracking throughout transit
+                    </p>
+                </div>
+
+                <div class="process-feature">
+                    <i class="fas fa-certificate feature-icon"></i>
+                    <h4 class="feature-title">Certified Teams</h4>
+                    <p class="feature-description">
+                        Highly trained specialists for luxury vehicle handling
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <style>
+            .contact {
+                padding: 8rem 0;
+                background: linear-gradient(to bottom, var(--dark), var(--darker));
+                position: relative;
+                overflow: hidden;
+            }
+
+            .contact::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -50%;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle, rgba(255,105,180,0.1) 0%, transparent 60%);
+                transform: rotate(45deg);
+            }
+
+            .contact-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+                position: relative;
+                z-index: 2;
+            }
+
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                margin-top: 4rem;
+            }
+
+            .contact-info {
+                padding-right: 2rem;
+            }
+
+            .contact-method {
+                margin-bottom: 2rem;
+                padding: 2rem;
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                transition: all var(--transition-normal);
+            }
+
+            .contact-method:hover {
+                transform: translateY(-5px);
+                background: rgba(255,255,255,0.03);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .contact-icon {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 1rem;
+            }
+
+            .contact-label {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--light);
+                margin-bottom: 0.5rem;
+            }
+
+            .contact-value {
+                color: var(--gray-400);
+                text-decoration: none;
+                transition: color var(--transition-normal);
+            }
+
+            .contact-value:hover {
+                color: var(--primary);
+            }
+
+            .contact-form {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid rgba(255,255,255,0.05);
+                border-radius: 12px;
+                padding: 3rem;
+            }
+
+            .form-group {
+                margin-bottom: 2rem;
+            }
+
+            .form-label {
+                display: block;
+                color: var(--gray-300);
+                margin-bottom: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 1rem;
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 6px;
+                color: var(--light);
+                font-size: 1rem;
+                transition: all var(--transition-normal);
+            }
+
+            .form-input:focus {
+                outline: none;
+                border-color: var(--primary);
+                background: rgba(255,255,255,0.08);
+                box-shadow: 0 0 0 3px rgba(255,0,51,0.1);
+            }
+
+            .form-select {
+                width: 100%;
+                padding: 1rem;
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: 6px;
+                color: var(--light);
+                font-size: 1rem;
+                transition: all var(--transition-normal);
+                appearance: none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                background-size: 1.5em;
+            }
+
+            .form-textarea {
+                min-height: 150px;
+                resize: vertical;
+            }
+
+            .submit-button {
+                width: 100%;
+                padding: 1rem 2rem;
+                background: var(--gradient-primary);
+                border: none;
+                border-radius: 6px;
+                color: var(--light);
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all var(--transition-normal);
+            }
+
+            .submit-button:hover {
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-lg);
+            }
+
+            /* Footer Styles */
+            .footer {
+                background: var(--darker);
+                padding: 6rem 0 2rem;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .footer::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(to right, transparent, var(--primary), transparent);
+            }
+
+            .footer-container {
+                max-width: var(--container-max);
+                margin: 0 auto;
+                padding: 0 var(--container-padding);
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 2fr repeat(3, 1fr);
+                gap: 4rem;
+                margin-bottom: 4rem;
+            }
+
+            .footer-brand {
+                padding-right: 2rem;
+            }
+
+            .footer-logo {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: var(--light);
+                margin-bottom: 1rem;
+                text-decoration: none;
+            }
+
+            .footer-description {
+                color: var(--gray-400);
+                margin-bottom: 2rem;
+                line-height: 1.7;
+            }
+
+            .social-links {
+                display: flex;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.05);
+                color: var(--light);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: all var(--transition-normal);
+            }
+
+            .social-link:hover {
+                background: var(--primary);
+                transform: translateY(-3px);
+            }
+
+            .footer-column h4 {
+                color: var(--light);
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .footer-links {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-links li {
+                margin-bottom: 0.8rem;
+            }
+
+            .footer-link {
+                color: var(--gray-400);
+                text-decoration: none;
+                transition: all var(--transition-normal);
+            }
+
+            .footer-link:hover {
+                color: var(--primary);
+                padding-left: 0.5rem;
+            }
+
+            .footer-bottom {
+                padding-top: 2rem;
+                border-top: 1px solid rgba(255,255,255,0.05);
+                text-align: center;
+                color: var(--gray-400);
+            }
+
+            @media (max-width: 1024px) {
+                .contact-grid,
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+            }
+        </style>
+
+        <div class="contact-container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our premium service team</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <h3 class="contact-label">+61 417 177 776</h3>
+                        <a href="tel:+61417177776" class="contact-value">+61 417 177 776</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h3 class="contact-label">Email Us</h3>
+                        <a href="mailto:concierge@premiertowing.com.au" class="contact-value">concierge@premiertowing.com.au</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h3 class="contact-label">Location</h3>
+                        <p class="contact-value">123 Premium Drive, Perth WA 6000</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Full Name*</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Contact Number*</label>
+                        <input type="tel" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Vehicle Details*</label>
+                        <input type="text" class="form-input" placeholder="Make, Model, Year" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Service Required*</label>
+                        <select class="form-select" required>
+                            <option value="">Select Service</option>
+                            <option value="enclosed">Enclosed Transport</option>
+                            <option value="emergency">Emergency Recovery</option>
+                            <option value="interstate">Interstate Transport</option>
+                            <option value="event">Event Transport</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Additional Information</label>
+                        <textarea class="form-input form-textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Submit Request</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">PERTH CHEAP TOWING</a>
+                    <p class="footer-description">
+                        Perth's leading luxury vehicle transport and recovery service. 
+                        Specializing in premium, exotic, and prestige vehicles.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#fleet" class="footer-link">Fleet</a></li>
+                        <li><a href="#process" class="footer-link">Process</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Enclosed Transport</a></li>
+                        <li><a href="#" class="footer-link">Emergency Recovery</a></li>
+                        <li><a href="#" class="footer-link">Interstate Transport</a></li>
+                        <li><a href="#" class="footer-link">Event Logistics</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Insurance Coverage</a></li>
+                        <li><a href="#" class="footer-link">Certifications</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premier Towing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const submitButton = this.querySelector('.submit-button');
+                const originalText = submitButton.innerHTML;
+
+                // Simulate form submission
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitButton.disabled = true;
+
+                setTimeout(() => {
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Request Sent';
+                    submitButton.style.background = '#28a745';
+
+                    setTimeout(() => {
+                        submitButton.innerHTML = originalText;
+                        submitButton.style.background = '';
+                        submitButton.disabled = false;
+                        contactForm.reset();
+                    }, 3000);
+                }, 2000);
+            });
+        }
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animatable elements
+        document.querySelectorAll('.section-title, .timeline-item, .process-feature, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar Scroll Effect
+        const nav = document.querySelector('.nav');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;if (currentScroll > lastScroll && currentScroll > 100) {
+            nav.classList.add('scrolled');
+            nav.style.transform = 'translateY(-100%)';
+        } else {
+            nav.classList.remove('scrolled');
+            nav.style.transform = 'translateY(0)';
+        }
+        lastScroll = currentScroll;
+    });
+
+    // Dynamic Experience Counter
+    function animateValue(element, start, end, duration) {
+        let current = start;
+        const range = end - start;
+        const increment = end > start ? 1 : -1;
+        const stepTime = Math.abs(Math.floor(duration / range));
+        
+        const timer = setInterval(() => {
+            current += increment;
+            element.textContent = current;
+            if (current === end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    // Parallax Effect
+    const parallaxElements = document.querySelectorAll('.parallax');
+    window.addEventListener('scroll', () => {
+        parallaxElements.forEach(element => {
+            const speed = element.dataset.speed || 0.5;
+            const yPos = -(window.pageYOffset * speed);
+            element.style.transform = `translateY(${yPos}px)`;
+        });
+    });
+
+    // Image Loading Animation
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('load', function() {
+            this.classList.add('loaded');
+        });
+    });
+
+    // Custom Cursor
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    document.querySelectorAll('a, button').forEach(element => {
+        element.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+        element.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+    });
+
+    // Form Input Animations
+    document.querySelectorAll('.form-input').forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+
+        input.addEventListener('blur', function() {
+            if (!this.value) {
+                this.parentElement.classList.remove('focused');
+            }
+        });
+    });
+
+    // Testimonial Carousel
+    class TestimonialCarousel {
+        constructor(element) {
+            this.element = element;
+            this.items = element.querySelectorAll('.testimonial-card');
+            this.currentIndex = 0;
+            this.autoPlayInterval = null;
+            
+            this.init();
+        }
+
+        init() {
+            this.createNavigation();
+            this.startAutoPlay();
+            this.addEventListeners();
+        }
+
+        createNavigation() {
+            const nav = document.createElement('div');
+            nav.className = 'testimonial-nav';
+            
+            const prevButton = document.createElement('button');
+            prevButton.innerHTML = '<i class="fas fa-chevron-left"></i>';
+            prevButton.addEventListener('click', () => this.prev());
+            
+            const nextButton = document.createElement('button');
+            nextButton.innerHTML = '<i class="fas fa-chevron-right"></i>';
+            nextButton.addEventListener('click', () => this.next());
+            
+            nav.appendChild(prevButton);
+            nav.appendChild(nextButton);
+            
+            this.element.appendChild(nav);
+        }
+
+        next() {
+            this.currentIndex = (this.currentIndex + 1) % this.items.length;
+            this.updateCarousel();
+        }
+
+        prev() {
+            this.currentIndex = (this.currentIndex - 1 + this.items.length) % this.items.length;
+            this.updateCarousel();
+        }
+
+        updateCarousel() {
+            const offset = -this.currentIndex * 100;
+            this.element.querySelector('.testimonial-track').style.transform = `translateX(${offset}%)`;
+        }
+
+        startAutoPlay() {
+            this.autoPlayInterval = setInterval(() => this.next(), 5000);
+        }
+
+        stopAutoPlay() {
+            clearInterval(this.autoPlayInterval);
+        }
+
+        addEventListeners() {
+            this.element.addEventListener('mouseenter', () => this.stopAutoPlay());
+            this.element.addEventListener('mouseleave', () => this.startAutoPlay());
+        }
+    }
+
+    // Initialize carousels
+    document.querySelectorAll('.testimonial-carousel').forEach(carousel => {
+        new TestimonialCarousel(carousel);
+    });
+
+    // Lazy Loading Images
+    document.addEventListener("DOMContentLoaded", function() {
+        const lazyImages = document.querySelectorAll("[data-src]");
+        
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('fade-in');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    });
+
+    // Service Hover Effects
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', function(e) {
+            const bounds = this.getBoundingClientRect();
+            const x = e.clientX - bounds.left;
+            const y = e.clientY - bounds.top;
+            
+            this.style.setProperty('--x', `${x}px`);
+            this.style.setProperty('--y', `${y}px`);
+        });
+    });
+      // Loader functionality
+// Add this at the end of your existing JavaScript
+document.addEventListener('DOMContentLoaded', () => {
+    const loader = document.querySelector('.loader-wrapper');
+    const progress = document.querySelector('.loader-progress');
+    const percentage = document.querySelector('.loader-percentage');
+    let progressValue = 0;
+
+    function updateLoader() {
+        progressValue += (100 - progressValue) * 0.1;
+        
+        if (progressValue >= 99.9) {
+            progressValue = 100;
+            progress.style.width = '100%';
+            percentage.textContent = '100%';
+            
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500);
+            
+            return;
+        }
+
+        progress.style.width = `${progressValue}%`;
+        percentage.textContent = `${Math.round(progressValue)}%`;
+        requestAnimationFrame(updateLoader);
+    }
+
+    // Start loader animation
+    setTimeout(() => {
+        requestAnimationFrame(updateLoader);
+    }, 300);
+});
+</script>
+</body>
+</html>  
